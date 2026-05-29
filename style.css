@@ -195,7 +195,7 @@ body{
     transform:scale(1.05);
 }
 
-/* ===== SECTION ===== */
+/* ===== SKILLS SECTION ===== */
 
 .skills-section{
     width:100%;
@@ -283,6 +283,83 @@ body{
     line-height:28px;
 }
 
+/* ===== PROJECT SECTION ===== */
+
+.projects{
+    padding:90px 8%;
+    background:#0f172a;
+}
+
+.project-heading{
+    text-align:center;
+    font-size:52px;
+    color:#38bdf8;
+    margin-bottom:60px;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.project-box{
+    width:350px;
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.5s;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.project-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #38bdf8;
+}
+
+.project-icon{
+    width:80px;
+    height:80px;
+    background:black;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.project-box h2{
+    font-size:26px;
+    margin-bottom:15px;
+    
+}
+
+.project-box p{
+    color:#cbd5e1;
+    line-height:28px;
+    margin-bottom:15px;
+}
+
+.project-box a{
+    display:inline-block;
+    padding:12px 20px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.4s;
+    font-weight:bold;
+}
+
+.project-box a:hover{
+    background:white;
+    color:black;
+}
+
 /* ===== FORM ===== */
 
 .form-box{
@@ -352,7 +429,6 @@ body{
     display:flex;
     flex-direction:column;
     gap:25px;
-    align-items:left;
 }
 
 .info-box{
@@ -382,12 +458,6 @@ body{
     align-items:center;
     justify-content:center;
     font-size:24px;
-    transition:0.4s;
-}
-
-.info-box:hover i{
-    background:black;
-    transform:scale(1.1);
 }
 
 .info-box span,
@@ -437,6 +507,16 @@ body{
 
 .footer-links a:hover{
     color:#38bdf8;
+}
+
+/* ===== MADE BY ===== */
+
+.made{
+    text-align:center;
+    margin-top:30px;
+    padding:15px;
+    color:#cbd5e1;
+    font-size:18px;
 }
 
 /* ===== ANIMATION ===== */
@@ -521,16 +601,17 @@ body{
         height:230px;
     }
 
-    .skills-section{
-        padding:70px 5%;
-    }
-
-    .section-title h1{
+    .section-title h1,
+    .project-heading{
         font-size:34px;
     }
 
     .skills-container{
         grid-template-columns:1fr;
+    }
+
+    .project-box{
+        width:100%;
     }
 
     .form-box{
@@ -545,13 +626,4 @@ body{
     .info-box{
         width:100%;
     }
-
-}
-.made{
-    text-align:center;
-    margin-top:30px;
-    padding:15px;
-    color:;
-    font-size:15px;
-    font-size: 1.5vw;
 }

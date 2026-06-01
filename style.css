@@ -25,7 +25,7 @@ body{
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    box-shadow:0 0 10px rgb(red, green, blue);
 }
 
 .aa h3{
@@ -186,7 +186,7 @@ body{
     height:380px;
     border-radius:50%;
     object-fit:cover;
-    border:6px solid #38bdf8;
+    border:5px solid #38bdf8;
     box-shadow:0 0 40px #38bdf8;
     transition:0.5s;
 }
